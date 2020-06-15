@@ -10,13 +10,15 @@ export default class App extends React.Component {
     this.state = { 
       tabstore,
       contentIndex: 0, 
+      touched: false,
     }
   }
 
   handleClick = (index) => {
     console.log(index);
     this.setState({
-      contentIndex: index
+      contentIndex: index,
+      touched: true
     })
   }
 
@@ -26,6 +28,7 @@ export default class App extends React.Component {
       <Tabs 
         tabs={this.state.tabstore}
         contentIndex = {this.state.contentIndex}
+        touched = {this.state.touched}
         onClick={(index) => this.handleClick(index)}
       />
     )
