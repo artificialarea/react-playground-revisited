@@ -8,9 +8,7 @@ export default class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = { 
-      tabstore,
-      contentIndex: 0, 
-      touched: false,
+      tabstore
     }
   }
 
@@ -23,13 +21,9 @@ export default class App extends React.Component {
   }
 
   render() {
-    // console.log(this.state.tabstore)
     return (
       <Tabs 
         tabs={this.state.tabstore}
-        contentIndex = {this.state.contentIndex}
-        touched = {this.state.touched}
-        onClick={(index) => this.handleClick(index)}
       />
     )
   }

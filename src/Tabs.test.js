@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './Tabs';
+import Tabs from './Tabs';
 
 describe('<Tabs />', () => {
   it('renders without crashing', () => {

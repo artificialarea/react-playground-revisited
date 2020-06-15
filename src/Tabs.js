@@ -1,24 +1,46 @@
 import React from 'react';
 
+
+
 export default class Tabs extends React.Component {
+
+  constructor(props) {
+    super(props)
+    this.state = {
+      contentIndex: 0,
+      touched: false,
+    }
+  }
+
+  handleClickHere = (contentIndex) => {
+    this.setState({
+      contentIndex,
+      touched: true
+    })
+  }
+
   render() {
 
     const tabs = this.props.tabs.map((tab, index) => 
       <button 
         key={index}
-        onClick={() => this.props.onClick(index)}
+        onClick={() => this.handleClickHere(index)}
       >
         {tab.name}
       </button>
     );
 
-    let content = this.props.tabs[this.props.contentIndex].content;
+    let contentText = this.props.tabs[this.state.contentIndex];
 
     return (
       <div className="tabs">
         {tabs}
-        {this.props.touched && <p className="content">{content}</p>}
+        {this.state.touched && <p className="content">{contentText.content}</p>}
       </div>
     )
   }
+}
+
+Tabs.defaultProps = {
+  tabs: []
 }
