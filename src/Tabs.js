@@ -39,7 +39,7 @@ export default class Tabs extends React.Component {
     return (
       <div className="tabs">
         {tabs}
-        {this.state.touched && <p className="content">{contentText.content}</p>}
+        {(!!this.props.tabs.length && this.state.touched) && <p className="content">{contentText.content}</p>}
       </div>
     )
   }

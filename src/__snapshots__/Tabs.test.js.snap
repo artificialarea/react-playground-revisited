@@ -1,5 +1,35 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Tabs /> opens first clicked tab, which then closes when another tab clicked 1`] = `
+<div
+  className="tabs"
+>
+  <button
+    key="0"
+    onClick={[Function]}
+  >
+    First tab
+  </button>
+  <button
+    key="1"
+    onClick={[Function]}
+  >
+    Second tab
+  </button>
+  <button
+    key="2"
+    onClick={[Function]}
+  >
+    Third tab
+  </button>
+  <p
+    className="content"
+  >
+    Fugit, sapiente aspernatur corporis velit, dolor eum reprehenderit provident ipsam, maiores incidunt repellat! Facilis, neque doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam exercitationem quos consectetur expedita consequatur.
+  </p>
+</div>
+`;
+
 exports[`<Tabs /> renders UI as expected 1`] = `
 <div
   className="tabs"
@@ -20,4 +50,10 @@ exports[`<Tabs /> renders UI as expected 1`] = `
     Third tab
   </button>
 </div>
+`;
+
+exports[`<Tabs /> renders empty given no tabs 1`] = `
+<div
+  className="tabs"
+/>
 `;
