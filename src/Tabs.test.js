@@ -7,5 +7,6 @@ describe('<Tabs />', () => {
     const div = document.createElement('div')
     ReactDOM.render(<Tabs />, div)
     ReactDOM.unmountComponentAtNode(div)
-  })
+  });
+  
 });

@@ -12,6 +12,10 @@ export default class Tabs extends React.Component {
     }
   }
 
+ static defaultProps = {
+    tabs: []
+  }
+
   handleClickHere = (contentIndex) => {
     this.setState({
       contentIndex,
@@ -41,6 +45,3 @@ export default class Tabs extends React.Component {
   }
 }
 
-Tabs.defaultProps = {
-  tabs: []
-}
