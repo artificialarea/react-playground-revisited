@@ -38,12 +38,10 @@ export default class App extends React.Component {
     return (
       <div>
         <h1>Testing...</h1>
-
         <Button 
           onClick = {(value) => this.handleClick(value)}
           label = 'click me'
         />
-        {/* context */}
         {this.state.touched && <p>{content}</p>}
       </div>
     )
