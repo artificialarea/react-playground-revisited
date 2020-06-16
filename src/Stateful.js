@@ -20,7 +20,7 @@ class Stateful extends React.Component {
     });
   }
   // ^^ NOTE the underscore (_) in _toggleLikeState.
-  // It's a programming convention frequently used to preface the name of an object's property or method that is *PRIVATE*. It's 'merely a convention and not enforced by javascript, itself; a quick and easy way to immediately identify a private class member.
+  // It's an 'identifier', a programming convention frequently used to preface the name of an object's property or method that is *PRIVATE*. It's merely a convention and not enforced by javascript, itself; a quick and easy way to immediately identify a private class member.
 
   render() {
     const { name } = this.props;
