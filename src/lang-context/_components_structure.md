@@ -10,7 +10,7 @@
     * __languageSpecificCopy.js__ simple object with all the language specific copy
 
 ## Tree Diagram
-
+```
                     GreatGrandChild[c]
                       |
                     GrandChild
@@ -19,4 +19,5 @@
         \            /
               App
 
-[c] LanguageContext
+[c] = LanguageContext
+```
