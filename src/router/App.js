@@ -25,7 +25,15 @@ export default class App extends React.Component {
           <Nav list={this.state.list}/>
           <Switch>
             <Route exact path='/' component={Home} />
-            <Route path='/child/:childId' component={Child} /> 
+            <Route 
+              path='/child/:childId' 
+              // component={Child} 
+              render={props => (
+                <Child {...props} list={this.state.list} />
+              )}
+              // ^^^ passing state into component via Render Props!
+              // https://dev.to/halented/passing-state-to-components-rendered-by-react-router-and-other-fun-things-3pjf 
+            /> 
             <Route path='/error' component={Error} />
             <Route component={Error} />
           </Switch>
