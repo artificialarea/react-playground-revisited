@@ -14,4 +14,6 @@ Edit the /src/App.js file to create a router (like the example one between lines
 #### Stretch: Dynamic Children
 Created a _*dynamic route*_ (and dynamic NavList) of several __":Child"__ components related to a store list of objects that have id/name and content associated with them.
 
-**REITERATIONS TODO:** Should pass store list as a prop to Child instead of importing it directly.
+**REITERATIONS TO DO:** 
+1. Should pass store list as a prop to Child instead of importing it directly.
+2. Route to error page if path is '/child/not-a-childId'
