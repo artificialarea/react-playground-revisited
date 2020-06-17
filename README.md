@@ -11,4 +11,7 @@ Edit the /src/App.js file to create a router (like the example one between lines
 * when you visit http://localhost:3000/blah you will see the __"Error"__ component
 * and the __"Navigation"__ component is visible in all 3 scenarios
 
-#### Stretch: Dynamic Children?
+#### Stretch: Dynamic Children
+Created a _*dynamic route*_ (and dynamic NavList) of several __":Child"__ components related to a store list of objects that have id/name and content associated with them.
+
+**REITERATIONS TODO:** Should pass store list as a prop to Child instead of importing it directly.
