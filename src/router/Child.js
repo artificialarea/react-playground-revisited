@@ -1,10 +1,16 @@
 import React from 'react'
+import list from './store' // reiterate to to pass props instead
 
-export default function Child() {
+export default function Child(props) {
+  console.log(props.match.params.childId);
+  const child = list.find(item => 
+    item.id === props.match.params.childId
+  )
+
   return (
     <div className='child'>
-      <h2>Child Componenent</h2>
-      <p>Something childish happening here</p>
+      <h2>{child.id} Componenent</h2>
+      <p>{child.content}</p>
     </div>
   )
 }
