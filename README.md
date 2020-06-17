@@ -20,7 +20,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 <br />
 
 ## Tree Diagram
-
+```
                     GreatGrandChild[c]
                       |
                     GrandChild
@@ -29,7 +29,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
         \            /
               App
 
-[c] LanguageContext
+[c] = LanguageContext
+```
 
 <br />
 
