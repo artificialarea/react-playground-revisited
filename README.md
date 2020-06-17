@@ -11,9 +11,10 @@ Edit the /src/App.js file to create a router (like the example one between lines
 * when you visit http://localhost:3000/blah you will see the __"Error"__ component
 * and the __"Navigation"__ component is visible in all 3 scenarios
 
-#### Stretch: Dynamic Children
-Created a _*dynamic route*_ (and dynamic NavList) of several __":Child"__ components related to a store list of objects that have id/name and content associated with them.
+## Stretch Tasks
 
-**REITERATIONS TO DO:** 
-1. Should pass store list as a prop to Child instead of importing it directly.
-2. Route to error page if path is '/child/not-a-childId'
+1. Created a _*dynamic route*_ (and dynamic NavList) of several __"/child/:childId"__ components related to a store list of objects that have id/name and content associated with them.
+
+2. Passed state into react router component via render props
+
+3. Added react-router-dom Redirect logic in Child.js to redirect to Error.js if dynamic path is not valid '/child/:not-ChildId'.
