@@ -8,6 +8,18 @@ h1 {
   width: 100%;
 }
 
+a {
+  padding: 5px;
+  margin: 5px;
+  font-weight: bold;
+  color: black;
+  background-color:yellow;
+}
+
+a:hover {
+  background-color: aqua;
+}
+
 nav, div {
   border: 4px solid black;
   padding: 20px;
@@ -18,7 +30,10 @@ nav, div {
   border: 4px solid red;
 }
 
-a {
-  padding: 5px;
-  font-weight: bold;
+nav {
+  border: 4px solid grey;
+}
+
+.child {
+  border: 4px solid blue;
 }
