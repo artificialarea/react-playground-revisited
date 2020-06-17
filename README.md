@@ -11,3 +11,4 @@ Edit the /src/App.js file to create a router (like the example one between lines
 * when you visit http://localhost:3000/blah you will see the __"Error"__ component
 * and the __"Navigation"__ component is visible in all 3 scenarios
 
+#### Stretch: Dynamic Children?
