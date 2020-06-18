@@ -20,7 +20,8 @@ export default class App extends React.Component {
   render() {
 
     const contextValue = {
-      lang: this.state.lang
+      lang: this.state.lang,
+      setLang: this.handleChange
     }
 
     console.log(this.state)
