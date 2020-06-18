@@ -17,7 +17,7 @@
                       |
   LangControls[c]    Child
         \            /
-              App
+             App[c]
 
 [c] = LanguageContext
 ```
