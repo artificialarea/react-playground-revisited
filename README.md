@@ -27,7 +27,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
                       |
   LangControls[c]    Child
         \            /
-              App
+            App[c]
 
 [c] = LanguageContext
 ```
