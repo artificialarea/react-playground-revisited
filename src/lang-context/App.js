@@ -26,7 +26,7 @@ export default class App extends React.Component {
       <LanguageContext.Provider value={contextValue}>
         <div className='app'>
           <LangControls 
-            onSetLang={this.handleSetLang}
+            // onSetLang={this.handleSetLang}
           />
           <Child />
         </div>
