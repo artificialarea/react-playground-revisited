@@ -17,14 +17,18 @@ export default class App extends React.Component {
   render() {
     
     const contextValue = {
-      lang: this.state.lang
+      lang: this.state.lang,
+      // to fulfill the promise of the context with shape
+      setLang: this.handleSetLang
     }
 
     return (
+
       // <div className='app'>
       //   <LangControls />
       //   <Child />
       // </div>
+
       <LanguageContext.Provider value={contextValue}>
         <div className='app'>
           <LangControls 
