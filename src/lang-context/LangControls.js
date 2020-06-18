@@ -9,6 +9,7 @@ export default function LangControls(props) {
           <>
             <button
               onClick={() => value.setLang('en-GB')}
+              disabled={value.lang === 'en-GB'}
             >
               British{' '}
               <span role='img' aria-label='en-GB'>🇬🇧</span>
@@ -16,6 +17,7 @@ export default function LangControls(props) {
             {' '}
             <button
               onClick={() => value.setLang('en-US')}
+              disabled={value.lang === 'en-US'}
             >
               American{' '}
               <span role='img' aria-label='en-US'>🇺🇸</span>
@@ -23,6 +25,7 @@ export default function LangControls(props) {
             {' '}
             <button
               onClick={() => value.setLang('ko')}
+              disabled={value.lang === 'ko'}
             >
               Korean{' '}
               <span role='img' aria-label='ko'>🇰🇷</span>

@@ -18,7 +18,9 @@ export default class App extends React.Component {
 
     const valueContext = {
       lang: this.state.lang,
-      setLang: this.handleSetLang
+      // setLang: this.handleSetLang
+      // alternatively, no need, just setLang = () => {}
+      setLang: lang => this.setState({lang})
     }
 
     return (
