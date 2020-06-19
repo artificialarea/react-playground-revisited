@@ -1,20 +1,19 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# Stateful vs Stateless Components
+# Stateful vs Stateless Components + Props
 
 ## Tasks
 
-0. Branch off **m1-stateful-v00-init** template.
+0. Branch off **m1-stateful-v00-alt-init** template.
 
-1. Have an app display a **stateful** and a **stateless** component (that are autonomous from each other).
+1. Composition: have have a **stateful** (App.js) and an embedded **stateless** (Button.js) component that interact with each other via **props**.
 
-2. For the stateless component, have it render 'Hello World' **(via defaultProps)**
+2. Clicking on a 'like' button will update state and adjust the display in App:
+  * toggles between 👍 and 👎 emojis
+  * updates a 'click counter' every time the button is clicked.
+  * stretch: toggle text in button between 'like' and 'dislike' states, too.
 
-3. For the stateful component, have a "like" button that:
-  1. toggles between 👍 : 👎 emojis
-  2. updates a counter every time the button is clicked.
-
-4. **Stretch** add **propTypes** to both components to check their properties.
+3. **Stretch** add **defaultProps** and **propTypes** to, say, a headline in App.js
 
 <br />
 

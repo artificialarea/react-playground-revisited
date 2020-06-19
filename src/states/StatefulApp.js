@@ -1,7 +1,7 @@
 import React from 'react';
 import './StatefulApp.css';
 import StatelessButton from './StatelessButton';
-// import Stateful from './Stateful';
+import { PropTypes } from 'prop-types'
 
 export default class StatefulApp extends React.Component {
   
@@ -14,7 +14,6 @@ export default class StatefulApp extends React.Component {
   }
 
   handleUpdate = () => {
-    console.log('handleUpdate')
     const { isLiked, count } = this.state;
     const newCount = count + 1;
     this.setState({
@@ -25,13 +24,13 @@ export default class StatefulApp extends React.Component {
 
 
   render() {
-    console.log(this.state.isLiked)
     const { isLiked, count } = this.state
     return (
       <div className="stateful">
-        <h2>Like Stateful?</h2>
+        <h2>{this.props.headline}</h2>
         <p className='emoji'>{ isLiked ? '👍' : '👎' }</p>
-        <p>Counter: {count}</p>
+        <p>Click Counter: <b>{count}</b></p>
+
         <StatelessButton 
           state={this.state}
           clickUpdate={() => this.handleUpdate()}
@@ -39,4 +38,12 @@ export default class StatefulApp extends React.Component {
       </div>
     )
   }
+}
+
+StatefulApp.defaultProps = {
+  headline: 'Like Stateful?'
+}
+
+StatefulApp.propTypes = {
+  headline: PropTypes.string
 }
