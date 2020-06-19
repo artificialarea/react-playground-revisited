@@ -10,10 +10,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 2. Clicking on a 'like' button will update state and adjust the display in App:
   * toggles between 👍 and 👎 emojis
-  * updates a 'click counter' every time the button is clicked.
-  * stretch: toggle text in button between 'like' and 'dislike' states, too.
+  * updates a click counter every time the button is clicked, displaying total amounts clicked.
+  * pass 'word' prop to button
+  * stretch: toggle text in button between contextual 'like' and 'dislike' states, too.
 
-3. **Stretch** add **defaultProps** and **propTypes** to, say, a headline in App.js
+3. **Stretch** add **defaultProps** and **propTypes** for, say, the word prop in Button.js
 
 <br />
 
