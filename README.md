@@ -15,9 +15,9 @@ Edit the /src/App.js file to create a router (like the example one between lines
 
 1. Create **Dynamic Routes** e.g. http://localhost:3000/child/:childId
 
-2. **Pass state via render props** into react router component
+2. **Pass prop/state via render props** into react router component (likely handled by Dynamic Routes)
 
-3. Handle **history via render props** but putting a 'Back Home' button in the Child component
+3. **Programatic navigation with history**: handle history via render route props by putting a 'Back Home' button in the Child component
 
 4. Handle any **Dynamic Route URL errors**
 
