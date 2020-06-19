@@ -1,4 +1,5 @@
 import React from 'react'
+import { PropTypes } from 'prop-types'
 
 export default function Stateless(props) {
   return (
@@ -10,4 +11,7 @@ export default function Stateless(props) {
 
 Stateless.defaultProps = {
   noun: 'World'
+}
+Stateless.propTypes = { 
+  noun: PropTypes.string
 }
