@@ -14,7 +14,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   1. toggles between 👍 : 👎 emojis
   2. updates a counter every time the button is clicked.
 
-4. **Stretch** add **propTypes** to both components to check their properties.
+4. **Stretch** add **propTypes** to a components to check their propertie(s).
 
 <br />
 
