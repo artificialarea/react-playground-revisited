@@ -5,8 +5,9 @@ export default function Nav(props) {
 
   const {children} = props;
   const childrenNav = children.map((child, index) => (
-    <p><NavLink key={index} to={`/child/${child.id}`}>{child.id}</NavLink></p>
-  ));
+    <p><NavLink key={child.id + index} to={`/child/${child.id}`}>{child.name}</NavLink></p>
+  )); // don't know why I still get console error for key prop?
+  
   return (
     <div className='nav'>
       <h2>Nav Node</h2>
