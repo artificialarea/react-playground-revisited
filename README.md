@@ -17,6 +17,7 @@ Edit the /src/App.js file to create a router (like the example one between lines
 
 2. **Pass state via render props** into react router component
 
-3. Handle **Dynamic Route URL errors**
+3. Handle **history via render props** but putting a 'Back Home' button in the Child component
 
-4. Handle **history via render props** 
+4. Handle any **Dynamic Route URL errors**
+
