@@ -15,6 +15,11 @@ export default function Child(props) {
     <div className='child'>
       <h2>{theChild.name} Node</h2>
       <p>{theChild.content}</p>
+      <button
+        onClick={() => props.history.push('/')}
+      >
+        Go Home
+      </button>
     </div>
   )
 }

@@ -1,7 +1,7 @@
 .app {
   display: flex;
   flex-wrap: wrap;
-  border: none
+  border:none;
 }
 
 h1 {
