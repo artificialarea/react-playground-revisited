@@ -3,6 +3,10 @@ import React from 'react'
 
 export default function StatelessButton(props) {
   return (
-    <div></div>
+    <button
+      onClick={() => props.handleClick()}
+    >
+      { !props.isLiked ? 'like?' : 'dislike?'}
+    </button>
   )
 }
