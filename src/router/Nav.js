@@ -4,9 +4,10 @@ import { NavLink } from 'react-router-dom'
 
 export default function Nav(props) {
 
-  const navChildren = props.children.map(child => 
-    <NavLink to={`/child/:childId`}>{child.name}</NavLink>
-  )
+  const navChildren = props.children.map(child => {
+    // console.log(child)
+    return <NavLink key={child.id} to={`/child/${child.id}`}>{child.id}</NavLink>
+  })
 
   return (
     <div className='nav'>
